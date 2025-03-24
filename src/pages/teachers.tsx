@@ -48,6 +48,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
+import MainLayout from "@/components/layout/MainLayout";
 
 interface Teacher {
   id: string;
@@ -173,6 +174,9 @@ const TeachersPage = () => {
   };
 
   return (
+    <MainLayout title="Teachers ">
+
+    
     <div className="flex min-h-screen bg-background">
       {/* Main Content */}
       <div className="flex-1 space-y-6 p-6">
@@ -568,6 +572,7 @@ const TeachersPage = () => {
         </Dialog>
       )}
     </div>
+    </MainLayout>
   );
 };
 

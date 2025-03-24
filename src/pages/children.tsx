@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MainLayout from "@/components/layout/MainLayout";
 import {
   Search,
   Plus,
@@ -157,6 +158,9 @@ const ChildrenPage = () => {
   });
 
   return (
+    <MainLayout title="Classroms ">
+
+    
     <div className="flex min-h-screen flex-col bg-background">
       <header className="sticky top-0 z-30 flex h-20 w-full items-center justify-between border-b bg-white px-6 shadow-sm">
         <h1 className="text-2xl font-bold text-primary">Children</h1>
@@ -316,6 +320,7 @@ const ChildrenPage = () => {
         </DialogContent>
       </Dialog>
     </div>
+    </MainLayout>
   );
 };
 
@@ -630,6 +635,7 @@ const ChildCard = ({ child }: { child: ChildProps }) => {
         </DialogContent>
       </Dialog>
     </>
+    
   );
 };
 
